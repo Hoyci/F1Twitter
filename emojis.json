@@ -1,0 +1,26 @@
+{
+    "paises": {
+        "checkered": ":checkered_flag:",
+        "Bahrain" : ":BH:",
+        "Italy": ":IT:",
+        "Portugal": ":PT:",
+        "Spain": ":ES:",
+        "Monaco": ":MC:",
+        "Azerbaijan": ":AZ:",
+        "France": "FR",
+        "Austria": ":AT:",
+        "UK": ":GB:",
+        "Hungary": ":HU:",
+        "Belgium": ":BE:",
+        "Netherlands": ":NL:",
+        "Russia": ":RU:",
+        "Singapore": ":SG:",
+        "Japan": ":JP:",
+        "USA": ":US:",
+        "Mexico": ":MX:",
+        "Brazil": ":BR:",
+        "Australia": ":AU:",
+        "Saudi Arabia": ":SA:",
+        "UAE": ":AE:"
+    }
+}
