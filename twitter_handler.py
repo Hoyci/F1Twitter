@@ -1,6 +1,4 @@
 import tweepy.error
-import json
-
 
 class Twitter():
     def __init__(self, auth, api):
