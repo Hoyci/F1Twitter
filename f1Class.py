@@ -125,7 +125,3 @@ class F1():
         
         return f"{text}"
         
-
-if __name__ == '__main__':
-    coe = F1()
-    print(coe.nextRace())

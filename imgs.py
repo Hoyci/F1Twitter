@@ -39,10 +39,3 @@ class createImages():
         blank_image.save('constructorResult.jpg')
         print('Imagem criada com sucesso!')
         
-if __name__ == '__main__':       
-    criar = createImages()
-    criar.createQualifyImg()
-    criar.createRaceResultImg()
-    criar.createConstructorResultImg()
-
-
