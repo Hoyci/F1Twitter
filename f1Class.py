@@ -3,7 +3,7 @@ import xmltodict
 import json
 import flag
 from datetime import datetime
-
+import emoji
 
 class F1():
     def __init__(self):
@@ -13,7 +13,7 @@ class F1():
         self.listRaces = self.toJson['MRData']['RaceTable']['Race']
         
 
-        with open('F1Twitter\emojis.json', 'r') as emojis:
+        with open('emojis.json', 'r') as emojis:
             self.flags = json.load(emojis)
 
 
@@ -73,7 +73,7 @@ class F1():
         
     def message(self):
         if self.regressiveCount() != 0:
-            message = f"{flag.flag(self.listFlag())} {self.gpName()} {flag.flag(self.listFlag())}\nFaltam {self.regressiveCount()} dias para a corrida em {self.nextCircuit()}"
+            message = f"{flag.flag(self.listFlag())} {self.gpName()} {flag.flag(self.listFlag())}\nFaltam {self.regressiveCount()} dias para a corrida em {self.nextCircuit()} #F1"
             return message
         else:
             message = f"Finalmente chegou o grande dia do {self.gpName()} {flag.flag(self.listFlag())}"
@@ -122,5 +122,10 @@ class F1():
             else:
                 text += f"{jsonResult[index]['@position']}° - {jsonResult[index]['Driver']['GivenName']} {jsonResult[index]['Driver']['FamilyName']} - Não fez o qualify\n"
         
-        return f"{text}"
+        return text
         
+        
+if __name__ == "__main__":
+    bot = F1()
+    print(bot.qualifyResult())
+    print(bot.listFlag())
