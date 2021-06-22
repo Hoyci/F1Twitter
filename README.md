@@ -1,7 +1,7 @@
 
 # 🏁 Bem-vindo ao F1 Twitter Bot! 🏁
 
-Esse é um bot que publica diariamente uma contagem regressiva para a próxima corrida da Formula 1, publica uma imagem com o resultado do campeonato de construtores e uma imagem com o resultado do qualify da corrida.
+Esse é um bot que publica diariamente uma contagem regressiva para a próxima corrida da Formula 1, publica imagem com o resultado do campeonato de construtores, uma imagem com o resultado do qualify da corrida e uma imagem com o resultado da corrida.
 <br>
 Caso queira seguir o bot, [clique aqui](https://twitter.com/f1informacoes)
 # Stacks
