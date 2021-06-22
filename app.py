@@ -22,20 +22,22 @@ auth.set_access_token(API_TOKEN, API_SECRET_TOKEN)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 bot = Twitter(auth, api)
 
-f1 = F1()
-img = createImages()
-# post everyday
-bot.enviarTweet(f1.message())
 
-# post on saturday
-day = f1.nextRace() - datetime.today().date()
-if day.days == 1:
-    img.createConstructorResultImg()
-    imgPath = "constructorResult.jpg"
-    bot.enviarTweetComImg(f1.message(), imgPath)
-    
-# post on sunday
-if day.days == 0:
-    img.createQualifyImg()
-    imgPath = "qualifyImage.jpg"
-    bot.enviarTweetComImg(f1.message(), imgPath)
+def bot_post():
+    f1 = F1()
+    img = createImages()
+    # post everyday
+    bot.enviarTweet(f1.message())
+
+    # post on saturday
+    day = f1.nextRace() - datetime.today().date()
+    if day.days == 1:
+        img.createConstructorResultImg()
+        imgPath = "constructorResult.jpg"
+        bot.enviarTweetComImg(f1.message(), imgPath)
+        
+    # post on sunday
+    if day.days == 0:
+        img.createQualifyImg()
+        imgPath = "qualifyImage.jpg"
+        bot.enviarTweetComImg(f1.message(), imgPath)
