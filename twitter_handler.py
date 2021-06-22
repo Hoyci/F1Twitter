@@ -20,4 +20,11 @@ class Twitter():
         except Exception as e:
             print(e)
             raise e
-            
+    
+    def enviarTweetComImg(self, tweet, img):
+        try:
+            self.api.update_with_media(img, tweet)
+            print('Imagem postada com sucesso')
+        except Exception as e:
+            print(e)
+            raise e
