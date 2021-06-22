@@ -2,7 +2,6 @@ import requests
 import xmltodict
 import json
 import flag
-import emoji
 from datetime import datetime
 
 
